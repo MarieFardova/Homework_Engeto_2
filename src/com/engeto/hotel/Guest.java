@@ -9,7 +9,7 @@ public class Guest {
      LocalDate birthDate;
 
 
-    //construktor
+    //constructor
     public Guest(String name, LocalDate birthDate) {
         this.name = name;
         this.birthDate = birthDate;

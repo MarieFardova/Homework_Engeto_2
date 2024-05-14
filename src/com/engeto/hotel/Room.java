@@ -10,7 +10,7 @@ public class Room {
     BigDecimal price;
 
 
-    //Construktor
+    //Constructor
     public Room(int roomId, int numberOfBed, boolean balcony, boolean seaView, BigDecimal price) {
         this.roomId = roomId;
         this.numberOfBed = numberOfBed;
