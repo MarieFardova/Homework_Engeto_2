@@ -5,26 +5,17 @@ import java.time.LocalDate;
 
 public class Guest {
 
-    private String name;
-    private LocalDate birthDate;
-    private Room room;
-    private LocalDate bookingFrom;
-    private LocalDate bookingTo;
+     String name;
+     LocalDate birthDate;
+
 
     //construktor
-    public Guest(String name, LocalDate birthDate, Room room, LocalDate bookingFrom, LocalDate bookingTo) {
+    public Guest(String name, LocalDate birthDate) {
         this.name = name;
         this.birthDate = birthDate;
-        this.room = room;
-        this.bookingFrom = bookingFrom;
-        this.bookingTo = bookingTo;
     }
 
-    public Guest(String adélaMalíková, LocalDate of) {
-
-    }
-
-    //Getter, Setter
+    //getter, setter
     public String getName() {
         return name;
     }
@@ -40,28 +31,21 @@ public class Guest {
     public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
+};
 
-    public Room getRoom() {
-        return room;
-    }
 
-    public void setRoom(Room room) {
+
+
+/*
+    public void setRoomBook(Rooms room, LocalDate bookRoomFrom, LocalDate bookRoomTo) {
         this.room = room;
+        this.bookRoomFrom = bookRoomFrom;
+        this.bookRoomTo = bookRoomTo;
     }
-
-    public LocalDate getBookingFrom() {
-        return bookingFrom;
+    public String getRoomBook() {
+        return name + "'s reservation - " + "room number:" + room.roomNumber + " form " + bookRoomFrom + " to " + bookRoomTo;
     }
-
-    public void setBookingFrom(LocalDate bookingFrom) {
-        this.bookingFrom = bookingFrom;
+    public String toString() {
+        return String.format("Guest ID:\n name: %s \n date of born: %s \n",name, dateOfBorn );
     }
-
-    public LocalDate getBookingTo() {
-        return bookingTo;
-    }
-
-    public void setBookingTo(LocalDate bookingTo) {
-        this.bookingTo = bookingTo;
-    }
-}
+}*/

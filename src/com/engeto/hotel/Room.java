@@ -3,11 +3,11 @@ package com.engeto.hotel;
 import java.math.BigDecimal;
 
 public class Room {
-    private int roomId;
-    private int numberOfBed;
-    private boolean balcony;
-    private boolean seaView;
-    private BigDecimal price;
+    int roomId;
+    int numberOfBed;
+    boolean balcony;
+    boolean seaView;
+    BigDecimal price;
 
 
     //Construktor
@@ -18,7 +18,8 @@ public class Room {
         this.seaView = seaView;
         this.price = price;
     }
-     //Getter, Setter
+
+    //getter, setter
     public int getRoomId() {
         return roomId;
     }
@@ -61,20 +62,21 @@ public class Room {
 }
 
 
-/* Potřebujeme evidovat hosty (guest), které ubytováváme v hotelu.
+/* 1/ Potřebujeme evidovat hosty (guest), které ubytováváme v hotelu.
 O každém hostu musíme uložit jméno, příjmení a datum narození.
-Hosty vždy ubytováváme na pokojích (room). Pokoj je identifikován svým číslem.
+
+2/ Hosty vždy ubytováváme na pokojích (room). Pokoj je identifikován svým číslem.
 O každém pokoji chceme evidovat, kolik lůžek tam je (neřeš přistýlky apod.),
 zda má pokoj balkón a zda má výhled na moře a jaká je cena pokoje za jednu noc (předpokládej,
-že je cena pevně
-daná bez ohledu na sezónu a počet ubytovaných).
-V rámci jedné rezervace (booking) vždy přiřazujeme pokoj jednomu nebo více hostům
+že je cena pevnědaná bez ohledu na sezónu a počet ubytovaných).
+
+3/ V rámci jedné rezervace (booking) vždy přiřazujeme pokoj jednomu nebo více hostům
 na časové období mezi dvěma daty (například pokoj číslo 3 na období od 15. 7. do 24. 7. 2021).
 Pobyt je buď pracovní, nebo rekreační (type of vacation).
 Chceme také mít k dispozici třídu, která bude uchovávat všechny rezervace
 (například list of bookings), které jsme v systému vytvořili a bude mít metodu, která
 vypíše informace o všech rezervacích.
-Úkol
+
 Tvým úkolem je:
 Připravit třídy pro ukládání dat.
 Vytvořit konstruktory a přístupové metody.

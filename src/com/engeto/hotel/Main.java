@@ -2,21 +2,24 @@ package com.engeto.hotel;//TIP To <b>Run</b> code, press <shortcut actionId="Run
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Guest> guestList = new ArrayList<Guest>();
-        guestList.add(new Guest("Adéla Malíková", LocalDate.of(1993, 3, 13)));
-        guestList.add(new Guest("Jan Dvořáček", LocalDate.of(1995, 5, 5)));
-        for (Guest guest : guestList) {
-            System.out.println(guest);
+        List<Guest> guests = new ArrayList<>();
+        List<Room> rooms = new ArrayList<>();
+        List<Booking> bookings = new ArrayList<>();
+
+
+        guests.add(new Guest("Adéla Malíková", LocalDate.of(1993,3,13)));
+        guests.add(new Guest("Jan Dvořáček", LocalDate.of(1995,5,5)));
 
 
         }
     }
-}
+
 
 /*
 Vytvoř hosty Adélu Malíkovou (narozena 13. 3. 1993) a Jana Dvořáčka (narozen 5.5.1995).
