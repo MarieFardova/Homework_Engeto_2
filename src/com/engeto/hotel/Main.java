@@ -40,7 +40,7 @@ public class Main {
 
         System.out.println("\nSeznam rezervací:");
         for (Booking booking : bookings) {
-            System.out.println(new StringBuilder().append("Číslo pokoje: ").append(booking.getRoom().roomId).append(", jméno hosta: ").append(booking.getGuest1().name).append(", datum: ").append(booking.bookingFrom()).append(", počet nocí: ").append(booking.getNumberOfNights()).append(", cena: ").append(booking.getRoom().price).append("Kč").toString());
+            System.out.println("Číslo pokoje: " + booking.getRoom().roomId + ", jméno hosta: " + booking.getGuest1().name + ", datum: " + booking.bookingFrom() + ", počet nocí: " + booking.getNumberOfNights() + ", cena: " + booking.getRoom().price + "Kč");
             for (Guest guest : booking.getOtherGuests()) // výpis dalších hostí (pokud jsou)
                 System.out.println("    Jméno dalšího hosta: " + guest.getName() ); }
 

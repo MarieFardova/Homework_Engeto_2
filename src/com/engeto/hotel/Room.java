@@ -11,13 +11,15 @@ public class Room {
 
 
     //Constructor
-    public Room(int roomId, int numberOfBed, boolean balcony, boolean seaView, BigDecimal price) {
+    public Room(int roomId, int numberOfBed, boolean balcony, boolean seaView, int price) {
         this.roomId = roomId;
         this.numberOfBed = numberOfBed;
         this.balcony = balcony;
         this.seaView = seaView;
-        this.price = price;
+        this.price = BigDecimal.valueOf(price);
     }
+
+
 
     //getter, setter
     public int getRoomId() {

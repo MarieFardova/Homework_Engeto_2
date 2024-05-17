@@ -1,7 +1,6 @@
 package com.engeto.hotel;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +11,7 @@ public class Booking {
     public LocalDate bookingFrom;
     private int numberOfNights;
     private List<Guest> otherGuests;
-    private boolean isTourist;
+    private final boolean isTourist;
 
     //constructor
     public Booking(Room room, Guest guest1, LocalDate bookingFrom, int numberOfNights, List<Guest> otherGuests, boolean isTourist) {
@@ -42,7 +41,7 @@ public class Booking {
         this.guest1 = guest1;
     }
 
-    public LocalDateTime getBookingFrom() {
+    public LocalDate getBookingFrom() {
         return bookingFrom;
     }
 
@@ -67,4 +66,7 @@ public class Booking {
     }
 
 
+    public boolean isTourist() {
+        return isTourist;
+    }
 }
